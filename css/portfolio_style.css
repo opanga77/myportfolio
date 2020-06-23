@@ -1,0 +1,93 @@
+/*this css is used fro only portfolio page*/
+.poPannel {
+ 	flex: 100%;
+    padding-left: 170px;
+	padding-right: 180px;
+	padding-bottom: 20px;
+}
+
+/*contents this is one section*/
+.contentBlock{
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 20px;
+	background-image: url(../media/banner-6.jpg);
+}
+.contentBlock h1 {
+  	font-size: 25px;
+    font-family: cursive;
+    font-style: italic;
+    margin-top:-20px;
+    color: black;
+}
+
+.contentBlock li {
+    font-size: 15px;
+    font-family:Arial;
+    padding-left: 10px;
+    margin-left: 30px;
+}
+/*this is only one photo */
+#photo{
+    flex: 40%;
+    width: 200px;
+    height: auto;
+    margin-left: 100px;
+}
+#content{
+    flex: 60%;
+    width: auto;
+    height: auto;
+    display: inline;
+    margin-left: 540px;
+    float: left;
+    margin-top: -223px;
+    color: white;
+}
+.moreContent{
+    flex: 40%;
+    width: 500px;
+    height: auto;
+    display: inline-grid;
+    margin-top: -15px;
+    padding-top: 100px;
+    color: white;
+    word-spacing: 3px;
+}
+.moreContent h1 {
+    margin-top:-30px;
+    text-align: center;
+}
+.morePhoto{
+    flex: 60%;
+    width: 400px;
+    height: auto;
+    display: block;
+    margin-top: -330px;
+    padding-top: 100px;
+    margin-left: 498px;
+    opacity: 0.7;
+}
+/*this is for table tags of portfolio page*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+/*this is for table heading */
+th{
+	text-align: center;
+	background-color: #808080;
+    color: white;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+}
+/*this is for odd and  even table rows*/
+tr:nth-child(even){
+	background-color: #f2f2f2
+}
+tr:nth-child(odd){
+	background-color: #f9f9f9
+}

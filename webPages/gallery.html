@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+<!--The meta tag is used by browser fro how to display content and how to find in the search ingine-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Andason Okinyi">
+	<meta name="revised" content="23/06/2020">
+	<meta name="description" content="Portfolio website -Andason Okinyi">
+	<meta name="keywords" content="Portfolio, CV, Photo, Andason">
+
+	<title>Gallery -Andason Okinyi</title>
+	<!--Importing javascript and css from external file-->
+	<script type="text/javascript" src="../javaScript/datetime.js"></script>
+	<link href="../css/index_style.css" rel="stylesheet">
+	
+</head>
+
+<body>
+	<header id="header1">See some of my work</header>
+	<!--this is the navigation bar of gallery page-->
+		<div id="navBar">
+
+	        <div class="menus"><a href="contact.html">Contact</a></div>
+
+	        <div class="menus"><a href="research.html">Research</a></div>
+
+	        <div class="menus"><a href="gallery.html"><span style="color: #0F0;">Gallery</span></a></div>
+
+	        <div class="menus"><a href="blog.html">Blog</a></div>
+
+	        <div class="menus"><a href="portfolio.html">Portfolio</a></div>
+
+	    	<div class="menus"><a href="../index.html">Home</a></div>
+
+	    	<div class="name"><p id="date"></p>
+	    	<!--call the function from external javascript file after importing above-->
+	    		<script type="text/javascript">
+	    			display_date();
+	    		</script>
+	    		
+	    	</div>
+		</div>
+	</header>
+  <!--inside this div tag main contents are holds -->
+	<div class="body">
+		<div class="photos">
+			<h1 id="Trainign">Here are Some of my work</h1><br>
+			<div class="fade">
+
+				<div class="shadow" style="display: inline-block;">
+					<img  style="padding-right: 50px;" src="../Images/blog.jpeg" alt="photos" width="333" height="430" />
+					<div class="caption">
+					    <p>Blog site<br>(python/flask)</p>
+					</div>
+				</div>
+
+				<div class="shadow" style="display: inline-block; margin-left: 16px; margin-right: 33px;">
+					<img style="padding-right: 50px;" src="../Images/news.jpeg" width="333" height="430" />
+					<div class="caption">
+					    <p>News highlight<br>(python)</p>
+					</div>
+				</div>
+
+				<div class="shadow" style="display: inline-block; margin-left: 12px; margin-right: 5px;">
+					<img src="../Images/github.png" width="333" height="430"/>
+					<div class="caption">
+					    <p>Github repo search<br>(Angular)</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="photos">
+			<h1></h1><br>
+			<div class="fade">
+
+				<div class="shadow" style="display: inline-block; width: 520px;">
+					<img style="padding-right: 50px;" src="../Images/password.jpg" alt="photos" width="520" height="400" />
+					<div class="caption">
+					    <p>Backend password manager<br>(python/flask)</p>
+					</div>
+				</div>
+
+				<div class="shadow" style="display: inline-block; width: 520px;  margin-left: 12px; margin-right: 5px;">
+					<img style="padding-right: 50px;" src="../Images/pizza.jpg" alt="photos" width="520" height="400" />
+					<div class="caption">
+					    <p>Pizza order<br>(HTML,JS,CSS)</p>
+					</div>
+				</div>
+
+				
+				
+			</div>
+		</div>
+
+
+    </div>
+	<footer>
+		<div id="footer"><center>&copy; 2020 All Rights Reserved. <a style="text-decoration: none; color: #708090;" href="../index.html"> Okeno Andason Okinyi</a><br><a class="email" href="tel:+254768643095">Contact No.:+254768643095</a><br><a class="email" href="mailto:andersoking77@gmail.com">Email:andersoking77@gmail.com</a></center>
+		</div>
+	</footer>
+</body>
+
+</html>

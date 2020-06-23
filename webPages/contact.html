@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+<!--The meta tag is used by browser fro how to display content and how to find in the search ingine-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Andason Okinyi">
+<meta name="revised" content="23/06/2020">
+<meta name="description" content="Portfolio website -Andason Okinyi">
+<meta name="keywords" content="Portfolio, CV, Photo, Andason">
+
+	<title>Contact -Andason Okinyi</title>
+<!--Importing javascript and css from external file-->
+	<script type="text/javascript" src="../javaScript/datetime.js"></script>
+	<script type="text/javascript" src="../javaScript/contact.js">
+		hire_me();
+		feedback();
+	</script>
+	<link href="../css/index_style.css" rel="stylesheet">
+	<link href="../css/contact_style.css" rel="stylesheet">
+	
+</head>
+
+<body>
+	<header id="header1">Hello everyone, what do you want to say?</header>
+	<!--this is the navigation bar of contact page-->
+		<div id="navBar">
+			
+	        <div class="menus"><a href="Contact.html"><span style="color: #0F0;">Contact</span></a></div>
+
+	        <div class="menus"><a href="research.html">Research</a></div>
+
+	         <div class="menus"><a href="gallery.html">Gallery</a></div>
+
+	        <div class="menus"><a href="blog.html">Blog</a></div>
+
+	        <div class="menus"><a href="portfolio.html">Portfolio</a></div>
+
+	    	<div class="menus"><a href="../index.html">Home</a></div>
+
+	    	<div class="name"><p id="date"></p>
+	    	<!--call the function from external javascript file after importing above-->
+	    		<script type="text/javascript">
+	    			display_date();
+	    		</script>
+	    		
+	    	</div>
+		</div>
+	</header>
+<!--inside this div tag main contents are holds -->
+	<div id="content">
+
+			<div id="hire" class="hire">
+			<!--this form tag for creating a form -->
+				<form name="hire_form" onsubmit="hire_me()" action="#">	<!--calling feedback function after clicking the buttons-->
+					<div class="hire_field"> <center><b><span style="font-size: 25px; font-style: italic; font-family:cursive;">Hire Andason</span></b></center> As a:
+					<select class="hire_field" style="width: 86%;" name="employee">
+						    <option value="programmer">Programmer</option>
+						    <option value="web">Web Designer</option>
+						</select>
+					</div>
+
+					<div><input required="name" class="hire_field" type="text" name="CompanyN" placeholder="Company Name"></div>
+
+					<div><input required="email" class="hire_field" type="email" name="emailAd" placeholder="Email address"></div>
+
+					<div><input required="number" class="hire_field" type="text" name="PhoneNo" placeholder="Phone number"></div>
+
+					<div><input required="name" class="hire_field" type="text" name="FullName" placeholder="Full Name (Representative)"></div>
+									
+
+					<div><textarea required="message" class="hire_field" style="height: 120px; width: 90%;" name="message" rows="10" cols="30" placeholder="Your Message"></textarea></div>
+					
+					<div><input class="hire_field" style="width: 60px" type="submit" value="Send"></div>
+				</form>				
+			</div>
+
+			<div id="feedback" class="feedback" action="#">
+				<form name="feedback_form" onsubmit="feedback()">	<!--calling feedback function after clicking the buttons-->
+					<div><center><b><br><span style="font-size: 25px; font-style: italic; font-family:cursive;">Say something</span></b></center>
+					<input required="name" class="feedback_field" type="text" name="FullName" placeholder="Full Name"></div>
+
+					<div><input required="email" class="feedback_field" type="email" name="emailAd" placeholder="Email address"></div>
+
+					<div><input required="address" class="feedback_field" type="text" name="Address" placeholder="Address"></div>
+
+					<div><span style="padding-left: 15px;">Message for:</span>
+						<input class="feedback_field" style="width: 0px" type="radio" name="concern" value="feedback" checked> feedback 
+						<input class="feedback_field" style="width: 0px" type="radio" name="concern" value="suggestion"> suggestion 
+						<input class="feedback_field" style="width: 0px" type="radio" name="concern" value="complain"> complain 
+					</div>
+
+					<div><textarea required="message" class="feedback_field" style="width: 90%;" name="message" rows="10" cols="30" placeholder="Your Message"></textarea></div>
+					
+					<div><input class="feedback_field" style="width: 60px" type="submit" value="Send"></div>
+
+				</form>				
+			</div>
+		</div>
+
+		<footer>
+			<div id="footer"><center>&copy; 2020 All Rights Reserved. <a style="text-decoration: none; color: #708090;" href="../index.html"> Okeno Andason Okinyi</a><br><a class="email" href="tel:+254768643095">Contact No.:+254768643095</a><br><a class="email" href="mailto:andersoking77@gmail.com">Email:andersoking77@gmail.com</a></center>
+			</div>
+		</footer>
+</body>
+
+</html>

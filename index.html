@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+
+<head>
+<!--The meta tag is used by browser fro how to display content and how to find in the search ingine-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Andason Okinyi">
+<meta name="revised" content="23/06/2020">
+<meta name="description" content="Portfolio website -Andason Okinyi">
+<meta name="keywords" content="Portfolio, CV, Photo, Andason">
+
+	<title>Andason Okinyi</title>
+	<!--Importing javascript and css from external file-->
+    <script type="text/javascript" src="javaScript/datetime.js"></script>
+	<link href="css/index_style.css" rel="stylesheet">
+
+<!--this internal css is all about the slide show contents-->
+	<style type="text/css">
+        
+        /* slide show background*/
+	    .slideshow-box {
+
+            padding-left: -10px;
+            max-width: auto;
+            position: absolute;
+            border-radius: .1em;
+            height: 465px;
+            top: 0; 
+            width: 60%;
+            margin-top: 130px;
+            margin-left: -15px;
+        }
+        
+        /*it holds the photos */
+        .slideItems {
+        	margin-top: 20px;
+        	margin-left: 0;
+            border-radius: .0em;
+            display: flex;
+            width: 135%;
+            
+        }
+
+        /*it gives the style for sliding photos*/
+        .photo{
+            width:81%; 
+            height: 460px; 
+            border-radius: 1em ; 
+            border-color: #9999ff;
+            float: left;
+            margin-left: -9px;
+        }
+
+        /*this is for photos caption which is shown below the slider photos*/
+        .caption {
+            color: white;
+            text-transform: capitalize;
+            font-size: 30px;
+            padding: 8px 12px;
+            position: absolute;
+            font-family: cursive;
+            top: 400px;
+            background-color: #30465d;
+            opacity: .3;
+            width: auto;
+            text-align: center;
+            border-radius: .5em;
+            left: left;
+            margin-left: 20px;
+        }
+        
+        .caption:hover {
+            opacity: .5;
+            cursor: pointer;
+        }
+        
+        .back, .next {
+            cursor: pointer;
+            position: absolute;
+            
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            transition: 1s ease-in;
+            border-radius: 0 3px 3px 0;
+        }
+        
+        .next {
+            top: 55%;
+            color: gray;
+            background-color: transparent;
+            right: -55px;
+            border-radius: 0px 5px 5px 0px;
+        }
+        
+        .back {
+            top: 55%;
+            color: gray;
+            background-color: transparent;
+            left: 10px;
+            border-radius: 5px 0 0 5px;
+        }
+        
+        .back:hover, .next:hover {
+            background-color: #ffff;
+        }
+        
+        /* number of slides contents  */
+        .count {
+            color:gray;
+            font-size: 12px;
+            padding: 20px 15px;
+            position: absolute;
+            top: 20px;
+        }
+        
+        /*slider photo fade out in every 2 second*/
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 2s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .9
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+	<header id="header1">Andason Okinyi</header>
+
+	<!--this is the navigation bar of home page-->
+	<div id="navBar">
+
+	    <div class="menus"><a href="webPages/contact.html">Contact</a></div>
+
+	    <div class="menus"><a href="webPages/research.html">Research</a></div>
+
+	     <div class="menus"><a href="webPages/gallery.html">Gallery</a></div>
+
+	    <div class="menus"><a href="webPages/blog.html">Blog</a></div>
+
+        <div class="menus"><a href="webPages/portfolio.html">Portfolio</a></div>
+
+	<div class="menus"><a href="index.html"> <span style="color: #0F0;">Home</span></a></div>
+	
+        <div class="menus"><a href="https://github.com/opanga77" target="_blank">Repositories</a></div>
+		
+        <div class="name"><p id="date"></p>
+	    		<script type="text/javascript">
+                    display_date();
+                </script>
+	    		
+	    	</div>
+	</div>
+
+	<!--this is the main body part of home page-->  
+	<div class="body" style="display: flex;">
+	<!--this is left section where slider is shown-->
+    	<div class="leftSide">
+	    	<div class="contentBlock"  style="background-image: url(media/banner-8.jpeg);">
+
+
+	    		<div class="slider" >
+		    		<div class="slideshow-box">
+
+			            <div class="slideItems fade">
+			                <div class="count">1 of 4</div>
+			                <img src="Images/stopspread.png" class="photo">
+			                <div class="caption">In order to be irreplaceable, one must always be different</div>   
+			            </div>
+			            
+			            <div class="slideItems fade">
+			                <div class="count">2 of 4</div>
+			                <img src="Images/distance.jpeg" class="photo">
+			                <div class="caption">Fix the cause, not the symptom</div>
+			            </div>
+			            
+			            <div class="slideItems fade">
+			                <div class="count">3 of 4</div>
+			                <img src="Images/anders1.jpg" class="photo">
+			                <div class="caption">I'm not a great programmer; I'm just a good programmer with great habits</div>
+			            </div>
+				<div class="slideItems fade">
+					<div class="count">4 of 4</div>
+					<img src ="Images/mask.jpeg" class="photo">
+					<div class ="caption">The most important property of a program is whether it accomplishes the intention of its user</div>
+				</div>
+				            <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+				        	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				        <!--This javascript is used for sliding the content horizently .-->
+			        	<script type="text/javascript">
+						    var slideIndex = 0;
+						    slideShow();
+
+						    function slideShow() {
+						        var i;
+						        var slide = document.getElementsByClassName("slideItems");
+						        for (i = 0; i < slide.length; i++) {
+						            slide[i].style.display = "none";
+
+						        }
+						        slideIndex++;
+						        if (slideIndex > slide.length) {
+						            slideIndex = 1
+						        }
+						        slide[slideIndex - 1].style.display = "block";
+						        setTimeout(slideShow, 4000); // content changing time
+						    }
+
+			        	</script>
+
+			        </div>   
+
+    			</div>
+
+	    	</div>
+	       	
+       	</div>
+
+       	<!--this is right section of the full page where has welcome message division and featured blog section-->
+
+       	<div class="rightSide">
+       		<div class="contentBlock" style="background-image: url(media/banner-8.jpeg); color: white;"><br><br>
+       			<p style="font-family: cursive; font-size: 15px;">
+       			<center> <h1>Hello Visitors!</h1></center>
+       			<br>You are Welcome to my Portfolio.<br>
+       			<br>I am Andason Okinyi and I am student of software development at <span style="color: red;">M</span>oR<span style="color: red;">i</span>N<span style="color: blue;">gA </span> School.
+       			<br><br>Making a beautiful website and coding a strong program is my work. that's all about me.<br><br>
+       			
+       			<center><button style="font-size: 25px; font-weight : bold; width: 220px; cursor: pointer;" onclick="window.location.href='webPages/portfolio.html'">See My Portfolio</button><br><br>
+       			</p>
+       		</div>
+       		
+	       	<div class="contentBlock" style="background-image: url(media/banner-8.jpeg); color: white;">
+	       		<h1>Featured Blog</h1>
+	       		<p>In the recent world, technology is developing at a very fast pace and people from different fields of the world are being benefited  with  the advancement of technology.
+	       		<a href="webPages/blog.html">>>see more</a></p>
+
+	       	</div>
+
+       	</div>
+    </div>
+
+	<!--this is the footer section of every page-->
+	
+	<footer>
+		<div id="footer"><center>&copy; 2020 All Rights Reserved. <a style="text-decoration: none; color: #708090;" href="../index.html"> Okeno Andason Okinyi</a><br><a class="email" href="tel:+254768643095">Contact No.:+254768643095</a><br><a class="email" href="mailto:andersoking77@gmail.com">Email:andersoking77@gmail.com</a></center>
+		</div>
+	</footer>
+</body>
+
+</html>

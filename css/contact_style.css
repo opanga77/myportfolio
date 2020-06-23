@@ -1,0 +1,53 @@
+/*this css for only contact page */
+body{
+	background-image: url(../media/banner-8.jpeg);
+}
+
+/*all contents have 100% height and widht size*/
+#content{
+	width: 100%;
+	height: 100%;				
+}
+
+/*this is for hire form*/
+.hire{
+	width: 35%;
+	height:440px;
+	float: left;
+	margin-left: 115px;
+	margin-top:85px;
+	margin-bottom: 30px;
+	border: solid 1px;
+	border-radius: 5px;
+	background-image: url(../media/banner-4.jpg);
+}
+
+/*this is for text field and other web components of hire form*/
+.hire_field{
+	width: 88%;
+	margin-left: 15px;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+/*this is for feedback form*/
+.feedback{
+	width: 35%;
+	height:440px;
+	float: right;
+	border: solid 1px;
+	border-radius: 5px;
+	margin-right: 115px;
+	margin-top: 85px;
+	margin-bottom: 30px;
+	background-image: url(../media/banner-4.jpg);
+}
+/*this is for text field and other web components of feedback form*/
+.feedback_field{
+	width: 88%;
+	margin-left: 15px;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
